@@ -1,24 +1,17 @@
 <?php
-/**
- * Created by oseintow.
- * User: oseintow
- * Date: 9/14/16
- * Time: 7:28 PM
- */
 
-namespace Oseintow\Shopify\Exceptions;
+namespace Vdhruv\Shopify\Exceptions;
 
 use Exception;
 
 class ShopifyApiResourceNotFoundException extends Exception
 {
-
     /**
      * ShopifyApiException constructor.
      * @param $message
-     * @param int code
+     * @param int $code code
      */
-    public function __construct($message, $code)
+    public function __construct($message, int $code)
     {
         parent::__construct($message, $code);
     }
