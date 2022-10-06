@@ -1,6 +1,6 @@
 <?php
 
-namespace Oseintow\Shopify;
+namespace Vdhruv\Shopify;
 
 use GuzzleHttp\Client;
 use Illuminate\Support\ServiceProvider;
@@ -12,7 +12,7 @@ class ShopifyServiceProvider extends ServiceProvider
      *
      * @var bool
      */
-    protected $defer = false;
+    protected bool $defer = false;
 
     /**
      * Bootstrap the application events.
@@ -25,7 +25,7 @@ class ShopifyServiceProvider extends ServiceProvider
             __DIR__.'/../config/shopify.php' => config_path('shopify.php'),
         ]);
 
-        $this->app->alias('Shopify', 'Oseintow\Shopify\Facades\Shopify');
+        $this->app->alias('Shopify', 'Vdhruv\Shopify\Facades\Shopify');
     }
 
     /**
